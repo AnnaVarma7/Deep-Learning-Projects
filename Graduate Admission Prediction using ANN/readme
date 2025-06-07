@@ -1,0 +1,38 @@
+Graduate Admission Prediction using ANN 🎓
+This project predicts the chance of graduate admission for students applying to universities, based on key academic and profile metrics. The dataset is framed from an Indian applicant’s perspective.
+
+📊 Dataset
+Source: Kaggle – Graduate Admission Dataset
+Total Records: 500
+Features:
+GRE Score
+TOEFL Score
+University Rating
+SOP & LOR Strength
+CGPA
+Research Experience (0/1)
+
+Target: Chance of Admit
+
+⚙️ Workflow
+Dropped irrelevant column Serial No.
+Scaled features using MinMaxScaler
+Train-test split: 80/20
+
+🧠 Model Overview
+Type: Artificial Neural Network (Regression)
+Framework: Keras with TensorFlow backend
+Architecture:
+Input Layer: 7 neurons
+Hidden Layers: 2 layers with 7 neurons each (ReLU)
+Output Layer: 1 neuron (Linear activation)
+
+🚀 Training
+Loss: Mean Squared Error
+Optimizer: Adam
+Epochs: 100
+Validation Split: 20% from training data
+
+✅ Results
+R² Score on test data: 0.764
+Shows a good fit for predicting admission chances based on student profiles.
