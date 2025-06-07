@@ -1,0 +1,35 @@
+Customer Churn Prediction using ANN
+This project uses an Artificial Neural Network (ANN) to predict customer churn for a bank, based on features like credit score, geography, age, balance, product usage, and activity status.
+
+🧠 Model Overview
+Framework: TensorFlow & Keras
+Architecture:
+Input Layer: 11 neurons (for 11 features)
+2 Hidden Layers: 11 neurons each with ReLU activation
+Output Layer: 1 neuron with Sigmoid activation
+
+🗂️ Dataset
+Source: Churn Modelling Dataset
+Total Records: 10,000 customers
+Features include: CreditScore, Geography, Gender, Age, Balance, NumOfProducts, etc.
+Target: Exited (1 = churned, 0 = retained)
+
+⚙️ Preprocessing
+Dropped irrelevant columns: RowNumber, CustomerId, Surname
+Categorical encoding for Gender and Geography
+Feature scaling using StandardScaler
+
+📈 Training
+Split: 80% train, 20% test
+Optimizer: Adam
+Loss: Binary Crossentropy
+Epochs: 100
+Batch size: 50
+
+✅ Results
+Final test accuracy: ~79.75%
+Training and validation loss/accuracy tracked over epochs
+
+🧪 Evaluation
+Prediction on test set using threshold-based sigmoid outputs
+Accuracy calculated using sklearn.metrics.accuracy_score
