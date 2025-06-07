@@ -4,7 +4,7 @@ A collection of beginner-to-intermediate deep learning projects using Artificial
 
 📁 Projects
 1. 🐱🐶 Cat vs Dog Image Classification
-2. 
+
 Type: CNN (Image Classification)
 
 Dataset: Kaggle – Dogs vs. Cats
@@ -13,7 +13,7 @@ Description: Trained a CNN from scratch to classify pet images. Achieved ~84% va
 
 Tech: TensorFlow, Keras, ImageDataGenerator
 
-3. 📉 Customer Churn Prediction using ANN
+2. 📉 Customer Churn Prediction using ANN
 
 Type: ANN (Binary Classification)
 
@@ -23,7 +23,7 @@ Description: Predicts if a customer will leave the bank based on profile data.
 
 Tech: Pandas, TensorFlow, MinMaxScaler
 
-6. 🎓 Graduate Admission Prediction using ANN
+3. 🎓 Graduate Admission Prediction using ANN
    
 Type: ANN (Regression)
 
@@ -33,7 +33,7 @@ Description: Predicts the chance of university admission based on GRE, CGPA, and
 
 Tech: TensorFlow, MinMaxScaler, matplotlib
 
-8. ✍️ Handwritten Digit Classification using ANN
+4. ✍️ Handwritten Digit Classification using ANN
 
 Type: ANN (Multiclass Classification)
 
