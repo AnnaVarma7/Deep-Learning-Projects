@@ -1,0 +1,57 @@
+🐶🐱 Dogs vs Cats Image Classification
+This project builds a Convolutional Neural Network (CNN) to classify images of dogs and cats using the Dogs vs Cats dataset from Kaggle. It demonstrates image preprocessing, model building, training, and evaluation using TensorFlow.
+
+📂 Dataset
+Source: Kaggle
+Size: 20,000 training images, 5,000 testing images
+Classes: Dog, Cat
+Format: JPEG images in separate folders
+
+⚙️ Setup & Preprocessing
+Kaggle API used to download dataset
+Extracted using Python's zipfile module
+Used image_dataset_from_directory for loading and batching images
+Normalized pixel values to [0, 1] using tf.cast
+
+🧠 CNN Architecture
+Conv2D (32 filters) → BatchNorm → MaxPool
+Conv2D (64 filters) → BatchNorm → MaxPool
+Conv2D (128 filters) → BatchNorm → MaxPool
+Flatten → Dense (128) → Dropout
+Dense (64) → Dropout → Dense (1, sigmoid)
+Loss: Binary Crossentropy
+
+Optimizer: Adam
+Metrics: Accuracy
+
+🏋️ Training
+Epochs: 10
+Batch Size: 32
+Image Size: 256 x 256
+
+✅ Final Accuracy
+Training Accuracy: ~97.7%
+Validation Accuracy: ~83.9%
+
+📈 Results
+Accuracy Plot
+Visual comparison of training vs validation accuracy over epochs
+
+Loss Plot
+Visual comparison of training vs validation loss
+
+🔍 Key Observations
+Model learns quickly, showing good performance within 10 epochs
+Slight overfitting observed after Epoch 6
+Potential for further tuning: data augmentation, regularization, and early stopping
+
+🛠️ Future Improvements
+Use ImageDataGenerator or tf.keras.layers.RandomFlip/Rotation for augmentation
+Experiment with transfer learning using pretrained models like ResNet or EfficientNet
+Add EarlyStopping and ModelCheckpoint callbacks for optimization
+
+👩‍💻 Tools & Libraries
+Python
+TensorFlow / Keras
+Matplotlib
+Kaggle API
